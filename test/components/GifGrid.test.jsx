@@ -17,7 +17,6 @@ describe('Pruebas en <GifGrid/>', () => {
         render(<GifGrid category={category} />);
         expect(screen.getByText('Cargando...')).toBeTruthy();
         expect(screen.getByText(category)).toBeTruthy();
-        screen.debug();
     });
 
     test('debe de mostrar items cuando se cargan las imagenes userFetchGif', () => {
